@@ -61,26 +61,6 @@ ASP.NET Core MVC application with role-based authentication and authorization us
 - .NET 8 SDK
 - SQL Server Express / LocalDB (comes with Visual Studio)
 
-### Steps
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/arjundroid12/student-registration-webapp.git
-   ```
-
-2. **Open in Visual Studio**
-   - Open `StudentRegistrationWebApp.sln` or the `.csproj` file
-
-3. **Set connection string** (already configured in `appsettings.json`)
-   ```
-   Server=(localdb)\mssqllocaldb;Database=StudentRegistrationWebApp;Trusted_Connection=True;MultipleActiveResultSets=true
-   ```
-
-4. **Database** — nothing to do. Migrations are included in the repo and applied automatically at startup (`Database.Migrate()` in `DbInitializer`), which also seeds the roles, the admin account, and the sample courses. To create the database manually instead, run `Update-Database` in Package Manager Console.
-
-5. **Run the application**
-   - Press F5 or Ctrl+F5
-
 ### Default Admin Account
 - **Email:** admin@studentapp.com
 - **Password:** Admin@123
